@@ -1,5 +1,6 @@
 import React from 'react';
+import { Container } from 'semantic-ui-react';
 
-const NotFound = () => <div>Route not found!</div>;
+const NotFound = () => <Container>Route not found!</Container>;
 
 export default NotFound;

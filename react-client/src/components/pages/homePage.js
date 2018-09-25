@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
+import { Container } from 'semantic-ui-react';
 
 class HomePage extends Component {
   render() {
-    return (
-      <div>
-        Home page
-      </div>
-    )
+    return <Container>Home page</Container>;
   }
 }
 

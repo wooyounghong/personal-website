@@ -25,26 +25,29 @@ class NavBar extends Component {
     return (
       <Menu secondary>
         <Menu.Item
+          id="here"
           name="home"
           as={Link}
-          to="/home"
+          to="/"
           active={activeItem === 'home'}
         />
-
-        {/* <Menu.Item
-          name="home"
-          active={activeItem === 'home'}
-          onClick={this.handleClick}
-        /> */}
         <Menu.Item
           name="projects"
+          as={Link}
+          to="/projects"
           active={activeItem === 'projects'}
-          onClick={this.handleClick}
         />
         <Menu.Item
           name="about"
+          as={Link}
+          to="/about"
           active={activeItem === 'about'}
-          onClick={this.handleClick}
+        />
+        <Menu.Item
+          name="contact"
+          as={Link}
+          to="/contact"
+          active={activeItem === 'contact'}
         />
       </Menu>
     );
