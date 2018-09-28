@@ -1,5 +1,9 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
-const About = () => <Container>About Wayne...</Container>;
+const About = () => (
+  <Container>
+    <Container>About me</Container>
+  </Container>
+);
 
 export default About;
