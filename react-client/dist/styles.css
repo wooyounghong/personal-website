@@ -10,8 +10,14 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-.homepage-container {
-  margin: 50px auto 150px auto;
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto 150px auto;
+}
+.button-next {
+  display: flex;
 }
 .menu {
   display: flex;
@@ -32,10 +38,14 @@ a:hover {
 }
 
 .center {
-  margin: 180px 0px 30px 20px;
+  /* margin: 180px 0px 30px 20px; */
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   line-height: 80px;
   text-align: center;
+}
+
+.homepage-container {
+  margin: 180px auto 150px auto;
 }
 .homepage-intro {
   font-size: 80px;
@@ -56,7 +66,6 @@ a:hover {
   font-size: 40px;
   width: 60px !important;
   margin: 10px 0 5px 0;
-
   height: 100;
   /* width: 100; */
   transition: transform 300ms ease-out;
@@ -77,4 +86,20 @@ a:hover {
 .email-address:hover {
   color: red;
   text-decoration: underline;
+}
+
+.body-container {
+  margin: auto;
+}
+.body-header {
+  font-family: 'Lobster', Georgia, Times, serif;
+  font-size: 35px;
+  margin: 40px auto;
+}
+
+.body-description {
+  font-family: 'Karla', sans-serif;
+  font-size: 14pt;
+  line-height: 1.6;
+  text-align: center;
 }

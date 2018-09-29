@@ -2,7 +2,7 @@
 
 ### Purpose:
 
-This website is to describe who Wayne is and to showcase the projects that Wayne worked on.
+This website is to describe who Wayne is and to showcase the projects that Wayne worked on and Wayne's contact information.
 
 #### Additional Installed Libraries:
 
