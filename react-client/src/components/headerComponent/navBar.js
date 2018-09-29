@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { browserHistory } from 'react-router';
+import { Link } from 'react-scroll';
 
 class NavBar extends Component {
   constructor() {
@@ -13,13 +13,31 @@ class NavBar extends Component {
     return (
       <nav>
         <div className="menu">
-          <Link to="/about" className="menu-item">
+          <Link
+            to="About"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="menu-item about-scroll"
+          >
             About
           </Link>
-          <Link to="/portfolio" className="menu-item">
+          <Link
+            to="Portfolio"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="menu-item portfolio-scroll"
+          >
             Portfolio
           </Link>
-          <Link to="/contact" className="menu-item">
+          <Link
+            to="LandingPage"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="menu-item contact-scroll"
+          >
             Contact
           </Link>
         </div>

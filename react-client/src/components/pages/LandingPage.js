@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react';
 import SocialIcons from './SocialIcons.js';
-class HomePage extends Component {
+class LandingPage extends Component {
   render() {
     return (
       <Container className="homepage-container">
@@ -17,4 +17,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default LandingPage;
