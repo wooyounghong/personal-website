@@ -23,7 +23,7 @@ class NavBar extends Component {
             About
           </Link>
           <Link
-            to="Portfolio"
+            to="PortfolioContainer"
             spy={true}
             smooth={true}
             duration={500}
