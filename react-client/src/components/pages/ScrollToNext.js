@@ -3,7 +3,7 @@ import { Container, Button, Icon } from 'semantic-ui-react';
 // import * as Scroll from 'react-scroll';
 import { scroller } from 'react-scroll';
 
-class NextSectionButton extends React.Component {
+class ScrollToNext extends React.Component {
   constructor() {
     super();
 
@@ -30,4 +30,4 @@ class NextSectionButton extends React.Component {
   }
 }
 
-export default NextSectionButton;
+export default ScrollToNext;

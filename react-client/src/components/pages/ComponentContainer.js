@@ -5,7 +5,6 @@ import LandingPage from './LandingPage';
 import About from './About';
 import PortfolioContainer from './PortfolioContainer';
 import Contact from './Contact';
-import NextSectionButton from './NextSectionButton';
 import ScrollToTopButton from './ScrollToTopButton';
 class ComponentContainer extends React.Component {
   constructor(props) {
@@ -28,15 +27,12 @@ class ComponentContainer extends React.Component {
       <Container>
         <Element name="LandingPage" className="landing-page-element">
           <LandingPage />
-          {/* <NextSectionButton /> */}
         </Element>
         <Element name="About" className="about-element">
           <About />
-          {/* <NextSectionButton /> */}
         </Element>
         <Element name="PortfolioContainer" className="portfolio-element">
           <PortfolioContainer />
-          {/* <NextSectionButton /> */}
         </Element>
         <Element name="Contact" className="contact-element">
           <Contact />
