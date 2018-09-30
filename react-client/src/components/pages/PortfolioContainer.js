@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
 import PortfolioItemList from './PortfolioItemList';
+import NextSectionButton from './NextSectionButton';
 
 class PortfolioContainer extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class PortfolioContainer extends React.Component {
         <Container className="homepage-intro center">Portfolio</Container>
         <div>**** INSERT LOGOS HERE!****</div>
         <PortfolioItemList />
+        <NextSectionButton element={'Contact'} />
       </Container>
     );
   }

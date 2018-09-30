@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react';
 import SocialIcons from './SocialIcons.js';
+import NextSectionButton from './NextSectionButton.js';
 class LandingPage extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class LandingPage extends Component {
           </Container>
           <SocialIcons />
         </Container>
+        <NextSectionButton element={'About'} />
       </Container>
     );
   }

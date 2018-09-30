@@ -6,7 +6,7 @@ import About from './About';
 import PortfolioContainer from './PortfolioContainer';
 import Contact from './Contact';
 import NextSectionButton from './NextSectionButton';
-
+import ScrollToTopButton from './ScrollToTopButton';
 class ComponentContainer extends React.Component {
   constructor(props) {
     super(props);
@@ -18,6 +18,7 @@ class ComponentContainer extends React.Component {
     this.scrollToTop();
     // window.scrollTo(0, 0);
   }
+
   // scrollToTop function;
   scrollToTop() {
     scroll.scrollToTop();
@@ -27,19 +28,20 @@ class ComponentContainer extends React.Component {
       <Container>
         <Element name="LandingPage" className="landing-page-element">
           <LandingPage />
+          {/* <NextSectionButton /> */}
         </Element>
-        <NextSectionButton />
         <Element name="About" className="about-element">
           <About />
+          {/* <NextSectionButton /> */}
         </Element>
-        <NextSectionButton />
         <Element name="PortfolioContainer" className="portfolio-element">
           <PortfolioContainer />
+          {/* <NextSectionButton /> */}
         </Element>
-        <NextSectionButton />
         <Element name="Contact" className="contact-element">
           <Contact />
         </Element>
+        <ScrollToTopButton scrollToTop={this.scrollToTop} />
       </Container>
     );
   }

@@ -1,25 +1,31 @@
 import React from 'react';
-// import { Container } from 'semantic-ui-react';
+import { Container, Button, Icon } from 'semantic-ui-react';
+// import * as Scroll from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 class NextSectionButton extends React.Component {
   constructor() {
     super();
-    this.state = {
-      currentPage: 'LandingPage',
-    };
-    this.onNextClick = this.onNextClick.bind(this);
+
+    this.nextClickHandler = this.nextClickHandler.bind(this);
   }
-  onNextClick(event) {
+  nextClickHandler(event) {
+    console.log(scroller, 'Scroll scroller');
     event.preventDefault();
-    console.log('clicked');
+    scroller.scrollTo(this.props.element, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+    });
+    console.log('clicked', this.props.element);
   }
   render() {
     return (
-      <div className="button-container">
-        <button className="button-next" onClick={this.onNextClick}>
-          Next Section!
-        </button>
-      </div>
+      <Container className="button-container">
+        <Button icon className="button-next" onClick={this.nextClickHandler}>
+          <Icon name="chevron down" />
+        </Button>
+      </Container>
     );
   }
 }

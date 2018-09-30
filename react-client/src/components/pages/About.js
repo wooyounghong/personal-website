@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Header, Image } from 'semantic-ui-react';
+import NextSectionButton from './NextSectionButton';
 const About = () => (
   <Container className="body-container">
     <Container className="center homepage-intro">About Me</Container>
@@ -35,6 +36,7 @@ const About = () => (
       50-733, and 50-733 to become certified as Microsoft Cloud Solutions
       Expert.
     </Container>
+    <NextSectionButton element={'PortfolioContainer'} />
   </Container>
 );
 
