@@ -8,8 +8,7 @@ class PortfolioContainer extends React.Component {
     return (
       <Container className="body-container">
         <Container className="homepage-intro center">Portfolio</Container>
-        <Container className="portfolio-container">
-          **** INSERT LOGOS HERE!**** Boxed!
+        <Container>
           <Container>
             <PortfolioItemList />
           </Container>

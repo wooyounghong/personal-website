@@ -11,13 +11,17 @@ class PortfolioItem extends React.Component {
   render() {
     const { portfolioData } = this.state;
     return (
-      <Grid columns="three" divided>
-        <Grid.Row className="portfolio-item-box">
+      <Grid columns="two" divided>
+        <Grid.Row>
           {portfolioData &&
             portfolioData.map(portfolioItem => (
-              <Grid.Column>
-                <Container>{portfolioItem.title}</Container>
-                <Container>{portfolioItem.description}</Container>
+              <Grid.Column className="portfolio-item-box">
+                <Container>
+                  <b>{portfolioItem.title}</b>
+                </Container>
+                <Container style={{ fontSize: '14px' }}>
+                  {portfolioItem.description}
+                </Container>
                 <Container>
                   {portfolioItem.icons.map(icon => (
                     <Icon name={icon} />
