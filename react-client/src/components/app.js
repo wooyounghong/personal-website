@@ -5,6 +5,7 @@ import { Element } from 'react-scroll';
 import NavBar from './headerComponent/NavBar.js';
 import ComponentContainer from './pages/ComponentContainer';
 import LandingPage from './pages/LandingPage';
+import { animateScroll as scroll } from 'react-scroll';
 
 class App extends Component {
   constructor() {

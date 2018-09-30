@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
-import { Element, animateScroll as scroll } from 'react-scroll';
+import { Element, animateScroll as scroll, Events } from 'react-scroll';
 import LandingPage from './LandingPage';
 import About from './About';
 import PortfolioContainer from './PortfolioContainer';

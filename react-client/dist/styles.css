@@ -10,6 +10,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
 .button-container {
   display: flex;
   align-items: center;
@@ -106,4 +107,21 @@ a:hover {
   font-size: 14pt;
   line-height: 1.6;
   text-align: center;
+}
+
+.portfolio-container {
+  border-style: solid;
+  color: red;
+}
+.portfolio-list-container {
+  display: flex;
+  flex-direction: column;
+  border-style: dotted;
+  color: blue;
+  align-items: center;
+}
+.portfolio-item-box {
+  border-style: solid;
+  color: black;
+  align-items: center;
 }

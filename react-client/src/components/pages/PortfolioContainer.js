@@ -8,8 +8,12 @@ class PortfolioContainer extends React.Component {
     return (
       <Container className="body-container">
         <Container className="homepage-intro center">Portfolio</Container>
-        <div>**** INSERT LOGOS HERE!****</div>
-        <PortfolioItemList />
+        <Container className="portfolio-container">
+          **** INSERT LOGOS HERE!**** Boxed!
+          <Container>
+            <PortfolioItemList />
+          </Container>
+        </Container>
         <ScrollToNext element={'Contact'} />
       </Container>
     );
