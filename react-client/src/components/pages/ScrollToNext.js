@@ -10,14 +10,12 @@ class ScrollToNext extends React.Component {
     this.nextClickHandler = this.nextClickHandler.bind(this);
   }
   nextClickHandler(event) {
-    console.log(scroller, 'Scroll scroller');
     event.preventDefault();
     scroller.scrollTo(this.props.element, {
       duration: 1500,
       delay: 100,
       smooth: true,
     });
-    console.log('clicked', this.props.element);
   }
   render() {
     return (

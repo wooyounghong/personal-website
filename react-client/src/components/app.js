@@ -18,9 +18,6 @@ class App extends Component {
           <Switch>
             <Route name="home" exact path="/" component={ComponentContainer} />
           </Switch>
-          {/* <Route name="projects" exact path="/projects" component={Projects} />
-          <Route name="about" exact path="/about" component={About} />
-          <Route name="contact" exact path="/contact" component={Contact} /> */}
         </div>
       </Router>
     );
